@@ -1,0 +1,46 @@
+p {
+  color: coral;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bg {
+  background-color: lightgreen;
+  background-image: url(./imagens/cat.png);
+  /* padding: 100px; padding comentado pra imagem ficar do tamanho certo */
+
+}
+
+.bg-image {
+  width: 513px;
+  height: 340px;
+}
+/* da largura e altura da imagem, para ela nao se repetir */
+
+.bg-repeat {
+  background-repeat: no-repeat;
+  /* repeat-y repetiria a imagem pra baixo, x pro lado e só repeat pra todos lados */
+  height: 540px;
+}
+
+.bg-size-cover {
+  background-size: cover;
+  height: 540px;
+}
+
+.bg-fixed {
+  background-attachment: scroll;
+  /* geralmente o valor padrao é scroll mas podemos usar fixed */
+  /* efeito paralax, só tem que saber exatamente como aplicar */
+  height: 540px;
+}
+
+.bg-position{
+  /* background-position: left; */
+  /* temos como passar dois valores : vertical e horizontal, EX: bottom right >>> em baixo e na direita, tambem podemos usar pixel ou porcentagem, mas as palavras chave são bem melhores pra isso */
+  /* background-repeat: no-repeat; */
+  /* é preciso pois não mostraria a posição se a imagem estivesse repetindo */
+  height: 540px;
+  background: #000 url(./imagens/cat.png) no-repeat right top;
+  /* podemos usar muitos valores em uma propriedade só, sempre que eu puder usar essa versão encurtada é melhor, pois temos menos codigo pra dar manutençao, mas as vezes podemos ter menos controle de tudo */
+}

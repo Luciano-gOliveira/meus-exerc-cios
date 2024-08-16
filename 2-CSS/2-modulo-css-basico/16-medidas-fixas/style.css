@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.pixel{
+  background-color: aqua;
+  /* vai aparecer se tiver largura e altura */
+  width: 1000px;
+  height: 100px;
+}

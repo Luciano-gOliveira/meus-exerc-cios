@@ -1,0 +1,32 @@
+/* trabalhando com o container */
+.flex {
+  display: flex;
+  width: 960px;
+  max-width: 100%;
+  /* para quebrar a linha */
+  flex-wrap: wrap;
+  /* tem que ter feito no container pai (responsivo sem usar media queries) */
+}
+
+.flex img {
+  max-width: 100%;
+}
+
+/* trabalhando com as colunas */
+.coluna {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 250px; /* basis pode definir a largura de cada div filha também */
+  /* estao como coluna na div filha, não na pai */
+  /* flex: 1; faz com que os items sempre se adequem ao tamanho do container*/
+  margin: 1em;
+  /* width: 250px; largura de cada bloquinho(div) com imagem e texto */
+}
+
+.botao {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* poisicionamento fácil com flex */

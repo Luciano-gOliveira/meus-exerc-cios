@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* ul {
+  list-style-type: none;
+} */
+
+/* bullets por imagem */
+
+ul{
+  /* list-style-image: url(./imagens/icone.png); */
+  background-color: orange;
+  list-style: square inside url(./imagens/icone.png);
+  /* square fica como provisório caso a imagem passada na url nao exista */
+}
+ /* inside coloca o bullet dentro da lista, na linha do style ou usando list style position */
+ul li{
+  border: 1px solid black;
+  padding: 20px;
+}
+
+ol{
+  /* list-style-image: url(./imagens/icone.png); */
+  background-color: rgb(0, 247, 255);
+  list-style: square inside url(./imagens/icone.png);
+  /* square fica como provisório caso a imagem passada na url nao exista */
+}
+ /* inside coloca o bullet dentro da lista, na linha do style ou usando list style position */
+ol li{
+  border: 1px solid black;
+  padding: 20px;
+}

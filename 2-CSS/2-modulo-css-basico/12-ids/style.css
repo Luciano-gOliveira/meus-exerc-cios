@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* pra estilizar id */
+/* #descricao{
+  background-color: orange;
+} */
+#descricaopc, #descricaovideogame{
+  background-color: orange;
+}

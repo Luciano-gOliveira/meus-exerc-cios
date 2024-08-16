@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* h1{
+  display: inline;
+}
+p{
+  display: inline;
+} */
+span{
+  color: coral;display: block;
+}
+
+.div-com-inline{
+  background-color: rgb(150, 127, 255);
+  display: inline;
+}
+.div-sem-inline{
+  background-color: rgb(150, 127, 255);
+}
+
+.link-com-block-level{
+  background-color: chartreuse;
+  display: block;
+}
+
+.link-sem-block-level{
+  background-color: chartreuse;
+}

@@ -1,0 +1,69 @@
+/* primeiro passo é dar o display flex no nosso container (o header) */
+.header {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  /* propriedade de flex container que contem os elementos filhos */
+  /* espaça os elementos (o logo A dos li e etc do NAV) */
+  align-items: center;
+  /* alinha no centro da direção da row -->>  */
+  flex-wrap: wrap;
+  /* para os itens filhos quebrarem  linha */
+  background-color: brown;
+}
+
+.logo img {
+  width: 95px;
+  height: 95px;
+}
+
+.menu {
+  display: flex;
+  /* para os itens do menu se alinharem por padrao em row  */
+}
+
+.menu li {
+  margin-left: 20px;
+  /* espaçamento nos itens da lista  */
+}
+
+.menu li a {
+  color: white;
+}
+
+@media(max-width: 425px) /* largura maxima pra começar a aplicar esses estulos */
+{
+  /* quero centralizar o logo... */
+  .logo { /* o A nao tinha estilo (alem do reset) */
+    display: block;
+    /* voltou ao padrão, em bloco e não flexivel como uma row  */
+    width: 100%;
+    text-align: center;
+    /* ocupar toda a largura da tela e centralizar */
+  }
+
+  nav {
+    width: 100%;
+    /* ocupar toda largura pra centralizar depois */
+    text-align: center;
+  }
+
+  .menu {
+    display: block;
+    /* voltar pro padrao coluna pra não ficar masi em row */
+    margin-top: 30px;
+    /* separar os itens do menu  */
+  }
+
+  .menu li {
+    margin-left: 0;
+    /* porque os li tinham um margin left e pro celular nao precisa */
+  }
+
+  .menu a {
+    /* espaçamento entre os links clicaveis */
+    padding: 20px;
+    display: block;
+    /* sem display o A não pega os paddings e margins (espaçamentos) */
+  }
+}

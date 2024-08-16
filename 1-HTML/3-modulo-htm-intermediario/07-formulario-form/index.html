@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario</title>
+</head>
+
+<body>
+  <h1>formulario</h1>
+
+  <h3>Formulario com GET</h3>
+  <form method="get" action="index.html">
+    <input type="text" name="q" value="twitter">
+    <input type="submit" value="enviar">
+  </form>
+  <p>get passa as informações do formulario por parametro na URL(query string)</p>
+  <br>
+  <h3>Formulario com POST</h3>
+  <form method="post" action="index.html" enctype="multipart/form-data">
+    <input type="text" name="q" value="twitter">
+    <input type="submit" value="enviar">
+  </form>
+  <p>usamos o post pra fazer coisas mais seguras como um login, enviando os dados por exemplo pra um index php</p>
+  
+  <!-- o formulario pode ter dois tipos de envios diferentes: o get e o post -->
+
+
+  <h3>Formulario de login no Facebook</h3>
+  <form method="get" action="index.html" enctype="multipart/form-data">
+
+    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+    <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email">
+
+    <input type="password" name="senha" id="senha" placeholder="Nova senha">
+
+    <br><br>
+
+    <label>Data de nascimento</label>
+    <br>
+    <select name="Dia">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <select name="Dia">
+      <option value="jan">Jan</option>
+      <option value="fev">Fev</option>
+      <option value="mar">Mar</option>
+      <option value="abr">Abr</option>
+      <option value="mai">Mai</option>
+    </select>
+
+    <select name="Dia">
+      <option value="1999">1999</option>
+      <option value="2000">2000</option>
+      <option value="2001">2001</option>
+      <option value="2002">2002</option>
+      <option value="2003">2003</option>
+    </select>
+
+    <br><br>
+
+    <label>Gênero</label>
+    <br>
+
+    <label for="feminino">Feminino</label>
+    <input type="radio" name="genero" id="feminino" value="feminino" checked>
+
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="genero" id="masculino" value="masculino">
+
+    <label for="personalizado">Personalizado</label>
+    <input type="radio" name="genero" id="personalizado" value="personalizado">
+    <br><br>
+
+    <input type="file" name="" id=""> <br><br>
+
+    <label>Linguagens</label>
+    <br><br>
+
+    <label for="c#">C#</label>
+    <input type="checkbox" name="linguagens" id="c#">
+    <br>
+
+    <label for="js">Javascript</label>
+    <input type="checkbox" name="linguagens" id="js">
+    <br>
+
+    <label for="py">Python</label>
+    <input type="checkbox" name="linguagens" id="py">
+    <br>
+
+    <label for="java">Java</label>
+    <input type="checkbox" name="linguagens" id="java">
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <p>um name tem que ser sempre o mesmo pra um grupo de radio e um grupo de checkbox</p>
+
+</body>
+
+</html>

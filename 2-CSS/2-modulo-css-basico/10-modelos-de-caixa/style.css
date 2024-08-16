@@ -1,0 +1,11 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+}
+p{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  padding: 20px;
+  border: solid 10px green;
+}

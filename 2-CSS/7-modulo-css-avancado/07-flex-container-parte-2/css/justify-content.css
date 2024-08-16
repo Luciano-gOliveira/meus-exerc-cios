@@ -1,0 +1,30 @@
+/* define o alinhamento ao longo do eixo principal */
+.flex-start {
+  justify-content: flex-start;
+}
+
+.colum-reverse {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end{ 
+  justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}

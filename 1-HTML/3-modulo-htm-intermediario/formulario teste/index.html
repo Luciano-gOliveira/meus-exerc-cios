@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <h1>Formulario</h1>
+
+  <form method="get" action="index.html">
+
+    <label for="get">Formulario com GET</label>
+    <input type="text" name="get" id="get">
+    <br><br>
+    <input type="submit" value="Enviar">
+
+  </form>
+  <br><br>
+
+  <form method="post" action="index.html">
+
+    <label for="post">Formulario do tipo post</label>
+    <input type="text" name="post" id="post">
+    <br><br>
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <h3>Formulario do facebook(cadastro)</h3>
+
+  <div class="formulario">
+    <form method="get" action="index.html" enctype="multipart/form-data">
+
+      <input type="text" name="nome" id="nome" placeholder="Nome">
+  
+      <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+      <br><br>
+  
+      <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou email">
+  
+      <input type="password" name="senha" id="senha" placeholder="Nova senha">
+      <br><br>
+  
+      <label>Data de nascimento</label>
+      <br><br>
+  
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  
+      <select>
+        <option value="jan">Jan</option>
+        <option value="fev">Fev</option>
+        <option value="mar">Mar</option>
+        <option value="abr">Abr</option>
+        <option value="mai">Mai</option>
+      </select>
+  
+      <select>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+      </select>
+      <br><br>
+  
+      <label>Gênero</label>
+      <br><br>
+  
+      <label for="feminino">Feminino</label>
+      <input type="radio" name="genero" id="feminino">
+  
+      <label for="masculino">Maculino</label>
+      <input type="radio" name="genero" id="masculino">
+  
+      <label for="personalizado">Personalizado</label>
+      <input type="radio" name="genero" id="personalizado">
+      <br><br>
+  
+      <label>Linguagens que sei</label>
+      <br><br>
+  
+      <label for="c#">C#</label>
+      <input type="checkbox" name="linguagens" id="c#">
+      <br>
+  
+      <label for="js">Javascrip</label>
+      <input type="checkbox" name="linguagens" id="js">
+      <br>
+  
+      <label for="py">Python</label>
+      <input type="checkbox" name="linguagens" id="py">
+      <br>
+  
+      <label for="java">Java</label>
+      <input type="checkbox" name="linguagens" id="java">
+      <br><br>
+  
+      <input type="submit" value="Cadastre-se">
+      
+    </form>
+  </div>
+
+</body>
+
+</html>

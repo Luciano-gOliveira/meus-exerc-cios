@@ -1,0 +1,58 @@
+.flex-0 {
+  /* flex-grow, flex-shrink, flex-basis  */
+  flex: 0;
+  /* evita que todos os elementos filhos ocupem o tamanho todo do container */
+}
+
+.flex-1 {
+  /* flex: 1; */
+  /*todos elementos filhos tem que expandir ate ocuparem todo o tamanho do container */
+  flex: 0 1 100px;
+}
+
+.flex {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+} 
+/* isso torna tudo no container responsivo */
+
+
+.order .item.item-3{
+  order: -1;
+}
+
+.order .item.item-4{
+  order: -1;
+}
+
+.order .item-2{
+  order: 1;
+}
+.order .item-1{
+  order: 2;
+}
+
+.align-self .item-5{
+  align-self: auto;
+}
+
+.align-self.start .item-3{
+  align-self: flex-start;
+}
+
+.align-self.end .item-3{
+  align-self: flex-end;
+}
+
+.align-self.center .item-3{
+  align-self: center;
+}
+
+.align-self.stretch .item-3{
+  align-self: stretch;
+}

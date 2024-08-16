@@ -1,0 +1,19 @@
+.container > div /* vai estilizar todas as divs que estao dentro do container */ {
+  border: 1px solid black;
+  background-color: #8a2be2;
+  color: white;
+}
+
+.container {
+  display: grid;
+  /* o min max irei usar dentro do grid template columns para definir a largura (3 colunas) */
+
+  /* 3 colunas
+  1 - column-span: 1 - a primeira com minimo de 100px e máximo de 800px.
+  2 - a segunda e a terceira (repeat) com minimo de 100px e maximo de 300px
+  3 - quarta coluna com auto no min e no max */
+
+  grid-template-columns: minmax(100px, 800px) repeat(2,minmax(100px,300px))  minmax(auto,auto);
+
+  /* no repeat ele cria mais duas colunas e aplica a largura maxima em minima a ela */
+}

@@ -1,0 +1,67 @@
+/* estilos gerais */
+body {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  background-color: lightgrey;
+  height: 300px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 1.2em;
+}
+/* estilos gerais */
+
+.texto-centralizado-1 {
+  width: 250px;
+  height: 250px;
+  background-color: orange;
+
+  text-align: center;
+  line-height: 250px;
+  /* trabalhar com tamanhos fixos podem ser problemáticos, tem que usar o mesmo tamanho do container pra centralizar o elemento tanto verticalmente como horizontal  */
+}
+
+.texto-centralizado-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* referente ao pai  */
+  /* transform: translateY(-50%);
+  transform: translateX(-50%); */
+  /* referente ao conteúdo (elemento) */
+  transform: translate(-50%, -50%);
+  /* versão encurtada x e y  */
+
+}
+
+.alinhado-margin-auto {
+  margin: auto; 
+  /* distribui as margins para que a distancia fique por igual */
+  display: block;
+  /* pois não conseguimos aplicar margin ou movimentar elementos com display inline  */
+}
+
+.alinhado-absolute {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.container-text-align {
+  text-align: center;
+  /* a imagem movimenta pois qualquer elemento inline, inline-block ou texto que está dentro de uma div pai com text align funciona com posicionamentos */
+}
+

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+body {
+  height: 1500px;
+  padding-top: 67px;
+}
+
+header{
+  font-size: 24px;
+  position: fixed;
+  background-image: linear-gradient(#ff2323,#ff9696,rgba(255,255,255,255));
+  width: 100%;
+  padding: 20px;
+  top: 0;
+}

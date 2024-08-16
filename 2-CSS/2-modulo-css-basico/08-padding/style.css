@@ -1,0 +1,41 @@
+@charset "UTF-8";
+*{
+  border: 0;
+}
+p{
+  margin: 30px;
+}
+
+/* outra forma */
+
+/* p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+} */
+
+/* forma mais pratica */
+
+p{
+  margin: 30px 15px;
+}
+
+/* outra forma
+p{
+  margin: 30px 15px 30px 15px;
+}
+as posições seguem o sentido horário */
+p{
+  background-color: aquamarine;
+  padding: 15px 10px;
+}
+/* este foi o padding */
+p{
+  border: solid 20px;
+  border-color: red green blue yellow;
+}
+h1{
+  border: 20px solid;
+  border-color: yellow blue green red;
+}

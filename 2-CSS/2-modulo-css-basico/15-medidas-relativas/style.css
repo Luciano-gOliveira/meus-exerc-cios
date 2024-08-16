@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+html{
+  background-color: #ccc;
+  font-size: 32px;
+}
+body{
+  background-color: #8a2be2;
+  width: 50%;
+  /* font-size: 3em; */
+  font-size: 3rem; 
+  /* 96px */
+}
+.pai{
+  background-color: #ea80fc;
+  width: 50%;
+  /* font-size: 1.5em; */
+  font-size: 1.5rem;
+  /* 48px */
+}
+.filha{
+  background-color: #1de966;
+  width: 50%;
+  /* font-size: 3em; */
+  font-size: .5rem;
+  /* 16px */
+}
+/* em EM sempre olhar a propriedade pai pra setar a filha */
+/* em REM sempre olhar para a propriedade raiz(o html) */

@@ -1,0 +1,13 @@
+html {
+  font-size: 30px;
+}
+
+.fa-facebook {
+  color: orange;
+  font-size: 48px;
+}
+
+.fa-facebook:hover {
+  color: red;
+  transition-duration: 0.2s;
+}

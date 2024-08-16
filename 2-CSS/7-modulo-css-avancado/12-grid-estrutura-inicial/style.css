@@ -1,0 +1,39 @@
+.container > div /* todas as divs dentro dela terão o seguinte estilo */ {
+  border:  1px solid black;
+  background-color: #8a2be2;
+  color: white;
+  font-size: 20px;
+}
+
+/* primeira coisa */
+
+.container {
+  display: grid;
+  /* displai inline grid os itens nao ocupam todo o tamanho do elemento pai e sim o tamanho do maior elemento entre os elementos filhos */
+  /* inicialmente nao muda nada pois nao aplicamos as propriedades de grid nos elementos filhos */
+  /* grid vai ter a questao de propriedades aplicadas no conteiner e nos filhos */
+  grid-template-columns: repeat(2, 100px);
+  /* grid-template-columns: 300px auto; */
+  /* define a largura da coluna */
+  /* duas colunas auto, se eu escrever 3 auto cria mais uma coluna, também com valor auto */
+  /* proxima coisa (propriedade) é o grid template, onde definimos as linhas e colunas do nosso grid */
+  grid-template-rows: repeat(2, 150px);
+  /* grid-template-rows: 100px 70px; */
+  /* define a altura da linha */
+
+  /* propriedade repeat vai repetir quantas vezes a gente informar um valor na linha */
+
+  grid-template: repeat(2, 150px) / repeat(2, 100);
+  /* forma de abreviar */
+
+  grid-gap: 10px;
+  /* tamanho entre as colunas e as linhas */
+  /* grid-column-gap: 30px;
+
+  grid-row-gap: 20px; */
+
+  grid-gap: 30px 10px;
+  /* rows 20 px de espaçamento e a coluna 10 */
+
+  
+}

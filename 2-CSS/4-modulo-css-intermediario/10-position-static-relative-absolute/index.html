@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position static, position e absolute</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="elemento elemento-estatico">
+    static vem por padrão
+  </div>
+
+  <div class="elemento elemento-relativo">
+    relative
+  </div>
+
+  <div class="elemento elemento-absoluto">
+    absolute (esta destacado da camada padrão com os outros elementos)
+  </div>
+
+  <div class="elemento elemento-estatico">
+    outro elemento estático
+  </div>
+
+  <div class="elemento elemento-relativo-com-filho">
+    <!-- um position absolute precisa de um elemento pai com position relative -->
+    <div class="elemento elemento-absoluto-com-pai">
+      absolute com pai
+    </div>
+  </div>
+
+</body>
+
+</html>

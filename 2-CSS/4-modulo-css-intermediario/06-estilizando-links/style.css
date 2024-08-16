@@ -1,0 +1,19 @@
+/* estilizando link  */
+a{
+  cursor: progress;
+  margin: 20px;
+  padding: 10px;
+}
+ /* estilizando eventos do link usando Pseudo-classes*/
+a:visited {
+  color: orange;
+}
+/* o que vem depois dos dois pontos sao pseudoclasses */
+a:active{
+  color: red;
+}
+
+a:hover {
+  background-color: red;
+  color: white;
+}

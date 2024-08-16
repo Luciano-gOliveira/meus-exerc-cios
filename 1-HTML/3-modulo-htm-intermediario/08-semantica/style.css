@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+a:visited {
+  color: rgb(255, 0, 242);
+}
+
+a:hover {
+  background-color: red;
+  color: white;
+}
+
+.footer-youtube-address{
+  text-decoration: none;
+  text-transform: uppercase;
+}
